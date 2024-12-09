@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionalidades</title>
+    <link rel="stylesheet" href="styles/estilo-func.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <hr>
+        <nav>
+            <div class="logo">
+                <img src="imagenes/espe-logo.png" alt="logo-espe">
+                <h1>Funcionalidades</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Volver</a></li>
+                <li><a href="#comparar">Comparar</a></li>
+                <li><a href="#verificar">Verificar</a></li>
+                <li><a href="#agregar">Agregar</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!--ESTRUCTURA QUE MUESTRA POR SECCIONES LOS DIFERENTES PEDIDOS DE LA ACTIVIDAD:
+        1.- ESTRUCTURA IF - COMPARACIÓN DE NUMEROS
+        2.- ESTRUCTURA SWITCH - VERIFICAR EL MES
+        3.- AGREGACION DE NOMBRES Y ENLISTAR-->
+
+
+    <!--DIV: CONTENEDOR QUE TENDRA EL MISMO ESTILO PARA LAS 3 SECCIONES-->
+    <div class="contenedor-secciones">
+
+        <!--SECCIÓN PARA LA COMPARACION DE NUMEROS-->
+        <section id="comparar">
+
+            <!--TEXTO INTRODUCTIVO-->
+            <h1>Compare sus numeros: </h1>
+            <p>En este apartado comprobaremos el mayor numero entre los ingresados por el usuario</p>
+
+            <!--DIV CON DOS CAMPOS(INPUTS) PARA INGRESAR LOS DOS NUMEROS A COMPARAR Y UN BOTON PARA ACCIONAR-->
+            <div class="form">
+                <label>Primer número: </label>
+                <input type="number" name="numero1" id="n1" placeholder="Ingrese el primer numero a comparar" required>
+                <label>Segundo número: </label>
+                <input type="number" name="numero2" id="n2" placeholder="Ingrese el segundo numero a comparar" required>
+                <button type="button" onclick="comparacion(event)">Comparar</button>
+            </div>
+
+            <!--DIV DE SALIDA PARA MOSTRAR LA COMPARACION-->
+            <div class="resultado" id="resultado"></div>
+        </section>
+    </div>
+
+    <div class="contenedor-secciones">
+
+        <!--SECCION PARA VER EL MES CORRESPONDIENTE AL NUMERO INGRESADO-->
+        <section id="verificar">
+
+            <!--TEXTO INTRODUCTIVO-->
+            <h1>Verifique el mes con un numero: </h1>
+            <p>Ingresa un numero del 1 al 12 y espera la alerta: </p>
+
+            <!--DIV CON UN INPUT O CAMPO PARA INGRESAR EL NUMERO-->
+            <div class="form">
+                <label>Ingresa un numero del 1 al 12: </label>
+                <input type="number" name="numero3" id="n3" placeholder="Ingrese el numero">
+                <button type="button" onclick="verificar(event)">Verificar</button>
+            </div>
+        </section>
+    </div>
+
+    <div class="contenedor-secciones">
+
+        <!--SECCION PARA AGREGAR UN USUARIO Y ENLISTAR-->
+        <section id="agregar">
+            <h1>Agregate: </h1>
+
+            <!--DIV CON UN INPUT PARA AGREGAR EL NOMBRE COMPLETO DEL USUARIO-->
+            <div class="form">
+                <label>Ingresa tu nombre completo: </label>
+                <input type="text" name="nombre" id="n4" placeholder="Ingresa tu nombre">
+                <button type="button" onclick="agregarNombre(event)">Agregar</button>
+            </div>
+        </section>
+    </div>
+
+    <!--DIV PARA MOSTRAR LOS USUARIOS AGREGADOS QUE ESTARAN UBICADOS EN EL CONTENEDOR QUE TIENE CADA SECCION
+        PARA TENER UN ESTILO MEJOR-->
+    <div class="contenedor-secciones">
+        <h2>Lista de nombres agregados: </h2>
+        <div id="listaNombres" class="listado"></div>
+    </div>
+
+    <!--SCRIPT PARA LAS DIFERENTES FUNCIONALIDADES-->
+    <script src="scripts/javascript-func.js"></script>
+</body>
+</html>

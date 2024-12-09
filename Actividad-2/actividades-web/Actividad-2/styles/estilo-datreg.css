@@ -1,0 +1,92 @@
+/*ESTILO GLOBAL QUE TOMA LA PAGINA*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*COLOR DE FONDO DE LA PAGINA*/
+body{
+    background-color:rgb(243, 214, 133);
+}
+
+/*COLOR DE FONDO DE LA SECCION DONDE ESTARA EL LOGO, IDENTIFICATIVO, OPCION DIRIGIENDO A LA PAGINA PRINCIPAL*/
+.cabecera {
+    background-color:black;
+    padding: 10px;
+}
+
+/*ESTILO PARA EL CONTENEDOR DE LOGO*/
+.logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+/*ESTILO PARA EL TEXTO DE H1*/
+.logo h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 27px;
+}
+
+/*ESTILO PARA EL TAMAÑO Y POSICION DEL LOGO*/
+.logo img{
+    position: relative;
+    width: 100px;
+    height: auto;
+}
+
+/*ESTILO PARA LOS ELEMENTOS DE LA ETIQUETA <nav>*/
+.cabecera nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*ESTILO DE LA LISTA DESORDENADA*/
+.cabecera nav ul{
+    display: flex;
+    gap: 3rem;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 19px;
+}
+
+/*ESTILO PARA EL ELEMENTO DE LA ETIQUETA <a>*/
+.cabecera nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+}
+
+/*EFECTO DDEL PASO DEL CURSOR POR LOS ELEMENTOS DE LA ETIQUETA <a>*/
+.cabecera nav li a:hover{
+    color: red;
+    background:greenyellow;
+    border-radius: 25px;
+}
+
+/*ESTILO PARA EL TEXTO EN H2*/
+.contenedor-registros h2{
+    padding: 15px;
+    text-align: center;
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+/*ESTILOS PARA LA TABLA DE  (BORDES, POSICION Y ESPACIADO DE CELDAS)*/
+table{        
+    width: 50%;
+    border-collapse: collapse;  
+    margin-top: 10px;          
+    margin: 10px auto;
+    border: 2px solid brown;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.5);;
+}
+
+th,td{
+    text-align: center;
+    padding: 10px;
+}
