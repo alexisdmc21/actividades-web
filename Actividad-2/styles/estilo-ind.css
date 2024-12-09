@@ -1,0 +1,85 @@
+/*ESTILO GLOBAL QUE TOMA LA PAGINA*/
+* {
+    padding: 0;              
+    margin: 2px;             
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*ESTILO PARA EL CONTENEDOR DEL MENU*/
+.cabecera{
+    background: linear-gradient(135deg, #009e28, #46ff4f);  /*Color de fondo*/
+    border-radius: 20px;                                        /*Bordes redondeados del contenedor*/
+}
+
+/*ESTILO PARA EL CONTENIDO DE LA CABECERA*/
+.navegacion{
+    padding-top: 30px;                                          /*Separacion del contenido en la parte de arriba de la cabecera*/
+}
+
+/*ESTILO PARA LOS ELEMENTOS QUE CONTIENE LA ETIQUETA <ul>*/
+.cabecera nav ul{
+    display: flex;
+    padding: 20px;
+    gap: 4rem;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/*ESTILO PARA LAS OPCIONES DEL MENU, ELEMENTOS DENTRO DE LA ETIQUETA <a>*/
+
+.cabecera nav ul li a{
+    font-weight: bold;
+    color: rgb(0, 2, 105);
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/*EFECTOS AL MOMENTO DE PASAR EL CURSOR POR LOS ELEMENTOS DE LA ETIQUETA <a>*/
+
+.cabecera nav ul li a:hover{
+    color: white;
+    background-color: rgb(25, 0, 255);
+    border-radius: 20px;
+}
+
+/*ESTILO PARA EL CONTENEDOR DEL LOGO DE LA ESPE*/
+
+.logo-espe{     
+    display: flex;          
+    align-items: center;        
+    justify-content: center;
+    position: relative;
+    font-size: 20px;
+    
+}
+
+/*ESTILO PARA ALINEAR LA IMAGEN DEL LOGO*/
+
+.logo-espe img{
+    position: absolute; 
+    left: 100px; 
+    width: 200px;
+    height: auto;
+    padding-top: 35px;
+}
+
+/*LAS DOS ETUQUETAS DAN ESTILO A LA CLASE PORTADA QUE COMO BACKGROUND SE TIENE UNA IMAGEN DE FONDO
+  CON UN TITULO H1 CON EN EL NOMBRE DE LA MATERIA*/
+
+.portada{
+    background: url(https://s3.ap-south-1.amazonaws.com/gotouniv/cover_photo/2796/cover_photo_1500X500.jpg) no-repeat;
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    border-radius: 20px;
+    font-size: 30px;          
+    color:maroon;           /*Color de texto*/
+    text-align: center;       /*Texto centrado*/
+}
+
+.portada h1{
+    font-family: cursive;                 /*Estilo de letra de H1*/
+    -webkit-text-stroke: 2px #ffffff;   /*Borde alrededor de las letras, color y tamaño de borde*/
+}

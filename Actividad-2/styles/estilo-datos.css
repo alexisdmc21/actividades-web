@@ -1,0 +1,104 @@
+/*ESTILO GLOBAL QUE TOMA LA PAGINA*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*COLOR DE FONDO DE LA PAGINA*/
+body{
+    background-color:rgb(243, 214, 133);
+}
+
+/*COLOR DE FONDO DE LA SECCION DONDE ESTARA EL LOGO, IDENTIFICATIVO, Y UNA OPCION DE VOLVER A LA 
+  PAGINA PRINCIPAL*/
+.cabecera {
+    background-color:black;
+    padding: 10px;
+}
+
+/*ESTILO PARAEL CONTENEDOR DE LOGO*/
+.logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    flex: 1;
+}
+
+/*ESTILO PARA EL TEXTO DE H1*/
+.logo h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 27px;
+}
+
+/*ESTILO PARA EL TAMAÑO Y POSICION DEL LOGO*/
+.logo img{
+    position: relative;
+    width: 100px;
+    height: auto;
+}
+
+/*ESTILO PARA LOS ELEMENTOS DE LA ETIQUETA <nav>*/
+.cabecera nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*ESTILO DE LA LISTA DESORDENADA*/
+.cabecera nav ul{
+    display: flex;
+    gap: 3rem;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 19px;
+    list-style-type: none;
+}
+
+/*ESTILO PARA EL ELEMENTO DE LA ETIQUETA <a> "VOLVER"*/
+.cabecera nav li a{
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+}
+
+/*EFECTO DDEL PASO DEL CURSOR POR LOS ELEMENTOS DE LA ETIQUETA <a>*/
+.cabecera nav li a:hover{
+    color: red;
+    background:greenyellow;
+    border-radius: 25px;
+}
+
+/*ESTILO PARA EL CONTENEDOR EN LA QUE ESTARAN MIS DATOS, ESPACIANDO DE LA CABECERA*/
+.mi-info {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/*ESTILO PARA LOS TEXTOS DE LAS ETIQUETAS H4*/
+.mi-info h4{
+    padding: 10px;
+}
+
+/*ESTILO PARA EL CONTENEDOR GENERAL EN EL QUE SE UBICAN LOS DATOS PERSONALES*/
+.info {
+    background: rgb(57, 194, 57);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 900px;
+    height: 400px;
+    text-align: center;
+}
+
+/*ESTILO PARA LA FOTO PERSONAL*/
+.info img {
+    width: 120px; 
+    height: 120px;
+    margin-bottom: 1rem;
+    border: 5px solid #005900; 
+    object-fit: cover; 
+}
